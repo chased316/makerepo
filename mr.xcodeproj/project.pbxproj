@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4F48B1522CED09330098C390 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F48B1512CED09330098C390 /* main.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		4F48B1452CECF3E00098C390 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,15 +24,8 @@
 
 /* Begin PBXFileReference section */
 		4F48B1472CECF3E00098C390 /* mr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mr; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F48B1512CED09330098C390 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		4F48B1492CECF3E00098C390 /* mr */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = mr;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4F48B1442CECF3E00098C390 /* Frameworks */ = {
@@ -44,7 +41,7 @@
 		4F48B13E2CECF3E00098C390 = {
 			isa = PBXGroup;
 			children = (
-				4F48B1492CECF3E00098C390 /* mr */,
+				4F48B1512CED09330098C390 /* main.swift */,
 				4F48B1482CECF3E00098C390 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,9 +69,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				4F48B1492CECF3E00098C390 /* mr */,
-			);
 			name = mr;
 			packageProductDependencies = (
 			);
@@ -94,6 +88,7 @@
 				TargetAttributes = {
 					4F48B1462CECF3E00098C390 = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
 					};
 				};
 			};
@@ -121,6 +116,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F48B1522CED09330098C390 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,11 +244,13 @@
 		4F48B14F2CECF3E00098C390 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69LF8929ZL;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -260,6 +258,7 @@
 		4F48B1502CECF3E00098C390 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69LF8929ZL;
